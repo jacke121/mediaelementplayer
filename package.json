@@ -1,0 +1,28 @@
+{
+  "name": "rentacar",
+  "version": "1.0.0",
+  "description": "nada",
+  "main": "index.js",
+  "scripts": {
+    "starts": "electron ."
+  },
+  "build": {
+    "appId": "com.electron.${name}",
+    "win": {
+      "iconUrl": "http://www.rosselot.cl/rent-a-car/wp-content/themes/rentacar2/img/favicon.ico"
+    }
+  },
+  "author": "mvalenzuela76",
+  "license": "MIT",
+  "devDependencies": {
+    "electron-builder": "^10.12.0",
+    "electron-packager": "^8.4.0",
+    "electron-prebuilt": "^1.4.13",
+    "grunt": "^0.4.0",
+    "grunt-electron": "^5.0.0"
+  },
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "jquery": "^3.1.1"
+  }
+}
