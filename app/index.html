@@ -1,1 +1,89 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link rel='stylesheet' href='http://fonts.googleapis.com/css?family=Roboto:400,500,700,400italic'/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/mediaelementplayer.min.css">
+    <script src="https://cdn.jsdelivr.net/jquery/3.1.1/jquery.min.js"></script>
+    <script>
+    jQuery = require('./js/jquery.min.js');
+    jQuery(document).ready(function($){
+    console.log('hi');
+    });
+    </script>
+    <script type="text/javascript" src="js/bootstrap.min.js" ></script>
+    <script src="https://cdn.jsdelivr.net/mediaelement/2.23.4/mediaelement-and-player.min.js"></script>
+    <!--<script src="http://www.youtube.com/player_api"></script>-->
 
+
+
+  </head>
+<body>
+  <button class="btn btn-default">Prueba</button>
+  <div class="embed-responsive embed-responsive-16by9">
+    <video width="320" height="240" autoplay="true" controls="controls" preload="none" class="embed-responsive-item">
+      <source type="video/youtube" src="http://www.youtube.com/watch?v=0Bmhjf0rKe8"></source>
+    </video>
+  </div>
+<div class="embed-responsivex embed-responsive-16by9">
+<div id="player" class="embed-responsive-item"></div>
+</div>
+<script>
+
+/*
+var player;
+videos=['0Bmhjf0rKe8','45931QhKy5M','NO2CAVja_7g'];
+jQuery.each(videos, function( index, value ) {
+  alert( index + ": " + value );
+});
+  function onYouTubePlayerAPIReady() {
+      player = new YT.Player('player', {
+      height: '390',
+      width: '640',
+      videoId: '0Bmhjf0rKe8',
+      events: {
+                'onReady': onPlayerReady,
+                'onStateChange': onPlayerStateChange
+              }
+            });
+        }
+
+        function onPlayerReady(event) {  event.target.playVideo();    }
+        function onPlayerStateChange(event) {   if(event.data === 0) {  alert('done'); }  }
+        */
+    </script>
+
+
+  <script>
+/*    var tag = document.createElement('script');
+    tag.src = "http://www.youtube.com/player_api";
+    var firstScriptTag = document.getElementsByTagName('script')[0];
+    firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+    function onYouTubePlayerAPIReady(){
+      console.log('yt api ready'+ tag.src);
+
+     }
+
+     player1 = YouTubePlayer('player', {
+         videoId: 'M7lc1UVf-VE'
+     });
+
+*/
+
+
+
+  jQuery(function($) {
+      jQuery('video,audio').mediaelementplayer();
+      var player = new MediaElementPlayer('video');
+    });
+    </script>
+<style media="screen">
+  .mejs-video{
+    width:100% !important;
+    height: auto !important;
+  }
+</style>
+  </body>
+</html>
